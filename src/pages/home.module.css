@@ -1,0 +1,9 @@
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.ContactPage {
+    display: flex;
+    gap: 5%;
+}
