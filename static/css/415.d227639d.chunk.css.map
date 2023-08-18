@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/415.d227639d.chunk.css","mappings":"AAAA,kBACI,YAAa,CACb,sBAAuB,CACvB,cACJ,CACA,yBACI,YAAa,CACb,MACJ","sources":["pages/home.module.css"],"sourcesContent":[".home {\n    display: flex;\n    justify-content: center;\n    margin-top: 10%;\n}\n.ContactPage {\n    display: flex;\n    gap: 5%;\n}"],"names":[],"sourceRoot":""}
