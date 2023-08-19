@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+
 import { $instance } from 'redux/auth/authOperations';
 
 
