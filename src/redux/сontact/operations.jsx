@@ -1,13 +1,16 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-
 import { $instance } from 'redux/auth/authOperations';
+// import axios from 'axios';
+// axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
+
+
 
 
 export const fetchContacts = createAsyncThunk(
   'contacts/fetch',
   async (_, thunkAPI) => {
     try {
-      const {data} = await $instance.get('/contacts');
+      const { data } = await $instance.get('/contacts');
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
