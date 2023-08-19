@@ -4,7 +4,7 @@ import { fetchContacts, addContact, deleteContact } from './operations';
 const contactsSlice = createSlice({
   name: 'contacts',
   initialState: {
-    items: [],
+    items: null,
     isLoading: false,
     error: null,
   },
@@ -12,6 +12,7 @@ const contactsSlice = createSlice({
     builder
       .addCase(fetchContacts.pending, state => {
         state.isLoading = true;
+        state.error = null;
       })
       .addCase(fetchContacts.fulfilled, (state, action) => {
         state.isLoading = false;
