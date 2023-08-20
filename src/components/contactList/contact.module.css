@@ -12,3 +12,7 @@
     background-color: rgb(168, 230, 230);
      
 }
+.listH {
+    justify-content: center;
+    display: flex;
+}

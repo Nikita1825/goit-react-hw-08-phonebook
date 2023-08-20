@@ -13,7 +13,8 @@ import { selectaUthentificated } from 'redux/auth/authReduser';
 const Contacts = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading)
-const authentificated = useSelector(selectaUthentificated)
+  const authentificated = useSelector(selectaUthentificated)
+
 
   useEffect(() => {
     if (!authentificated) return;
@@ -26,7 +27,8 @@ const authentificated = useSelector(selectaUthentificated)
 
       <Filter />
     
-      {isLoading ? <Loader /> : <ContactList />}
+      {isLoading  ? <Loader /> : <ContactList />}
+      
         
     </div>
     
